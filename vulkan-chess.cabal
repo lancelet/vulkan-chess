@@ -26,9 +26,6 @@ library
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
 
-  -- Other library packages from which modules are imported.
-  build-depends:       base ^>=4.12.0.0
-
   -- Directories containing source files.
   hs-source-dirs:      src
 
@@ -43,6 +40,11 @@ library
     -Wincomplete-record-updates
     -Wmissing-import-lists
 
+  -- Other library packages from which modules are imported.
+  build-depends:
+      base       ^>=4.12.0.0
+    , sdl2       ^>=2.5.0.0
+    , vulkan-api ^>=1.3.0.0
 
 executable vulkan-chess
   -- .hs or .lhs file containing the Main module.
